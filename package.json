@@ -15,10 +15,12 @@
     "url": "https://github.com/christophersulayao/react-sgt.git"
   },
   "dependencies": {
+    "materialize-css": "^1.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-redux": "^5.0.7",
-    "redux": "^4.0.1"
+    "redux": "^4.0.1",
+    "save": "^2.3.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.2",
