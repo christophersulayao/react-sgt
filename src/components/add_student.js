@@ -49,7 +49,7 @@ class AddStudent extends Component{
                     </div>
                 </div>
 
-                <div className="row material-icons">
+                <div className="row">
                     <div className="col input-field s10 offset-s1 ">
                         <input onChange={this.handleKeyPress} name="grade" type="text" id="grade" value={grade} autoComplete="off" />
                         <label htmlFor="grade ">Grade</label>
