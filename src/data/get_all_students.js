@@ -19,7 +19,7 @@ export default [
     },
     {
         id:'004',
-        name: 'Kat Williams.',
+        name: 'Kat Williams',
         course: 'Pimpin 303',
         grade: 100
     }
