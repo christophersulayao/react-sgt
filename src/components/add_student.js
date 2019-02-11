@@ -9,7 +9,6 @@ class AddStudent extends Component{
 
     handleSubmit = (event) => {
         event.preventDefault();
-        console.log('Form Submitted', this.state);
         this.props.add(this.state);
         this.resetForm();
     }
@@ -25,8 +24,7 @@ class AddStudent extends Component{
 
 
     handleKeyPress = (event) => {
-        // console.log('Event Name:', event.target.name);
-        // console.log('Event Value:', event.target.value);
+
         this.setState({
            [event.target.name]: event.target.value
         });
@@ -44,17 +42,17 @@ class AddStudent extends Component{
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col input-field s10 offset-s1">
+                <div className="row ">
+                    <div className="col input-field s10 offset-s1 ">
                         <input onChange={this.handleKeyPress} name="course" type="text" id="course" value={course} autoComplete="off"/>
                         <label htmlFor="course">Course</label>
                     </div>
                 </div>
 
-                <div className="row">
-                    <div className="col input-field s10 offset-s1">
-                        <input onChange={this.handleKeyPress} name="grade" type="text" id="grade" value={grade} autoComplete="off"/>
-                        <label htmlFor="grade">Grade</label>
+                <div className="row material-icons">
+                    <div className="col input-field s10 offset-s1 ">
+                        <input onChange={this.handleKeyPress} name="grade" type="text" id="grade" value={grade} autoComplete="off" />
+                        <label htmlFor="grade ">Grade</label>
                     </div>
                 </div>
 
@@ -63,7 +61,7 @@ class AddStudent extends Component{
                         <button onClick ={this.resetForm} type="button" className="btn red darken-2 btn-floating pulse btn-large">Clear</button>
                     </div>
                     <div className="col s6 center">
-                        <button className="btn green btn-floating pulse btn-large">Add</button>
+                        <button className="btn green btn-floating pulse btn-large  ">Add</button>
                     </div>
                 </div>
             </form>

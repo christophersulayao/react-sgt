@@ -7,11 +7,6 @@ import Table from './table';
 import studentData from "../data/get_all_students";
 import {randomString} from '../helpers';
 
-console.log('Random String 3:', randomString(3));
-console.log('Random String 8 default:', randomString(8));
-console.log('Random String 5', randomString(5));
-console.log('Random String 20', randomString(20));
-
 class App extends Component{
     state = {
         students: []

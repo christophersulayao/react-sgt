@@ -16,4 +16,3 @@ const StudentRow = (props) => {
 }
 export default StudentRow;
 
-//pass information in USE PROPS
