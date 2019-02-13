@@ -37,16 +37,23 @@ class App extends Component{
         }
     }
 
-    getStudentData(){
+    async getStudentData(){
         //call to server to get student data
 
-        axios.get('http://localhost:8910/server/getstudentlist.php').then((response) => {
-            console.log('Server response:', response.data.data)
+        const resp = await axios.get('http://localhost:8910/server/getstudentlist.php');
 
-            this.setState({
-                students: response.data.data
-            });
+        this.setState({
+           students: resp.data.data
         });
+
+
+        //     axios.get('http://localhost:8910/server/getstudentlist.php').then((response) => {
+        //     console.log('Server response:', response.data.data)
+        //
+        //     this.setState({
+        //         students: response.data.data
+        //     });
+        // });
 
 
     }
