@@ -18,10 +18,9 @@ class App extends Component{
 
         const formattedStudent = formatPostData(student);
 
-        await axios.post('http://localhost:8910/server/createstudent.php', formattedStudent);
+        await axios.post('/server/createstudent.php', formattedStudent);
         // console.log('Add Student:', response);
         // student.id = randomString();
-        //
         // this.setState({
         //    students: [...this.state.students, student]
 
@@ -32,7 +31,7 @@ class App extends Component{
 
         const formattedId = formatPostData({id: id});
 
-        await axios.post('http://localhost:8910/server/deletestudent.php', formattedId);
+        await axios.post('/deletestudent.php', formattedId);
         // const indexToDelete = this.state.students.findIndex((student) => {
         //     return student.id === id;
         // });
